@@ -1,7 +1,8 @@
-import logo from '../images/ArroiLogo.png';
+import logo from '../../public/images/ArroiLogo.png';
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
-// import { BsFillPinFill } from "react-icons/bs";
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <div
@@ -15,7 +16,7 @@ function Navbar() {
       }}
     >
       <div>
-        <a href="/" className="site-title"><img style={{width: '140px', height: '55px', paddingLeft:'63px',marginTop:'8px'}} src={logo} alt="logo" /></a>
+        <Link to="/" className="site-title"><img style={{width: '140px', height: '55px', paddingLeft:'63px',marginTop:'8px'}} src={logo} alt="logo" /></Link>
         
       </div>
       <div>

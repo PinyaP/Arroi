@@ -1,14 +1,15 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className='nav'>
       <p>RECOMMEND FOR YOU</p>
       <ul>
-        <a href="/" >Ranking the top 3 restaurants</a>
-        <a href="" style={{marginLeft:'10px'}}>Popular Restaurants</a>
-        <a href="" style={{marginLeft:'10px'}}>New Restaurants</a>
+        <Link to="/" >Ranking the top 3 restaurants</Link>
+        <Link to="" style={{marginLeft:'10px'}}>Popular Restaurants</Link>
+        <Link to="" style={{marginLeft:'10px'}}>New Restaurants</Link>
       </ul>
       </div>
   )

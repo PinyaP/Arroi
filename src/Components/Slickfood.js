@@ -1,9 +1,9 @@
 
 // import React, { settings } from 'react';
 import Slider from "react-slick";
-import pic1 from "../images/img1.png";
-import pic2 from "../images/img2.png";
-import pic3 from "../images/img3.png";
+import pic1 from "images/img1.png";
+import pic2 from "images/img2.png";
+import pic3 from "images/img3.png";
 function Slickfood(){
   const settings = {
     dots: true,
