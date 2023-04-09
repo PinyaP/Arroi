@@ -1,0 +1,32 @@
+.card{
+    width:310px;
+    height:316px;
+    display:grid;
+    place-Items:end;
+    margin-Left:10px;
+    margin-Top:10px;
+    float: left;
+}
+p.headp{
+    font-Weight:bold;
+    font-Size:24px;
+    text-Align:center;
+    margin-Bottom:4px;
+    margin-Top:3px;
+}
+p.subp{
+    font-Size:12px;
+    text-Align:center;
+    margin:0;
+}
+img{
+    width:310px;
+    height:316px;
+}
+.textborder{
+    background-Color:rgba(255,255,255,0.9);
+    position: absolute;
+    text-Align: center;
+    width: 22%;
+    height:17%;
+}

@@ -1,11 +1,10 @@
-// import React, { settings } from 'react';
 import Slider from 'react-slick';
 import React from 'react';
 function Slickfood(props) {
   const settings = {
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 6000,
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -19,21 +18,29 @@ function Slickfood(props) {
           <img style={{ width: '100%' }} src="images/img1.png" alt="" />
           <h1
             style={{
-              position: 'relative',
+              position: 'absolute',
+              color: 'white',
+              fontSize: '18px',
+              top: '80%',
+              textAlign: 'center',
+              fontWeight: 'bold',
+              width: '14.24%',
 
-              color: '#000000',
             }}
           >
-            1
+            Shellfish Pasta Pizza And Italian Food Photo
           </h1>
         </div>
         <div style={{ position: 'relative' }}>
           <img style={{ width: '100%' }} src="images/img2.png" alt="" />
           <h1
             style={{
-              position: 'relative',
-
-              color: '#000000',
+              position: 'absolute',
+              fontSize:'18px',
+              color: 'white',
+              top: '80%',
+              textAlign: 'center',
+              width: '14.24%',
             }}
           >
             2
@@ -43,8 +50,12 @@ function Slickfood(props) {
           <img style={{ width: '100%' }} src="images/img3.png" alt="" />
           <h1
             style={{
-              position: 'relative',
-              color: '#000000',
+              position: 'absolute',
+              fontSize:'18px',
+              color: 'white',
+              top: '80%',
+              textAlign: 'center',
+              width: '14.24%',
             }}
           >
             3

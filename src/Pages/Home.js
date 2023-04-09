@@ -2,6 +2,8 @@ import React from 'react';
 import '../Styles/Home.css';
 import { Link } from 'react-router-dom';
 import Slickfood from '../Components/Slickfood';
+import Top3res from '../Components/Top3res';
+
 const Home = () => {
   return (
     <div className="home-container">
@@ -17,6 +19,7 @@ const Home = () => {
             New Restaurants
           </Link>
         </ul>
+        <Top3res />
       </div>
     </div>
   );
