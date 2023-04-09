@@ -1,32 +1,43 @@
-.card{
-    width:310px;
-    height:316px;
-    display:grid;
-    place-Items:end;
-    margin-Left:10px;
-    margin-Top:10px;
-    float: left;
+.top3-con {
+    padding-top: 5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
 }
-p.headp{
-    font-Weight:bold;
-    font-Size:24px;
-    text-Align:center;
-    margin-Bottom:4px;
-    margin-Top:3px;
+
+.card {
+    position: relative;
+    width: 311px;
+    height: 346px;
+
+
 }
-p.subp{
-    font-Size:12px;
-    text-Align:center;
-    margin:0;
+
+
+
+p.headp {
+    font-Weight: bold;
+    font-Size: 24px;
+
 }
-img{
-    width:310px;
-    height:316px;
+
+p.subp {
+    font-Size: 12px;
+
+    margin: 0;
 }
-.textborder{
-    background-Color:rgba(255,255,255,0.9);
+
+.card img {
+    width: 100%;
+}
+
+.textborder {
+    background-Color: rgba(255, 255, 255, 0.9);
     position: absolute;
-    text-Align: center;
-    width: 22%;
-    height:17%;
+    text-Align: left;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
 }

@@ -5,7 +5,7 @@ function Slickfood(props) {
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 6000,
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -13,7 +13,10 @@ function Slickfood(props) {
 
   return (
     <div className="reactSlick">
-      <Slider {...settings} style={{ width: '100%', margin: '0 auto' }}>
+      <Slider
+        {...settings}
+        style={{ width: '100%', margin: '0 auto', overflow: 'hidden' }}
+      >
         <div style={{ position: 'relative' }}>
           <img style={{ width: '100%' }} src="images/img1.png" alt="" />
           <h1
@@ -25,7 +28,6 @@ function Slickfood(props) {
               textAlign: 'center',
               fontWeight: 'bold',
               width: '14.24%',
-
             }}
           >
             Shellfish Pasta Pizza And Italian Food Photo
@@ -36,7 +38,7 @@ function Slickfood(props) {
           <h1
             style={{
               position: 'absolute',
-              fontSize:'18px',
+              fontSize: '18px',
               color: 'white',
               top: '80%',
               textAlign: 'center',
@@ -51,7 +53,7 @@ function Slickfood(props) {
           <h1
             style={{
               position: 'absolute',
-              fontSize:'18px',
+              fontSize: '18px',
               color: 'white',
               top: '80%',
               textAlign: 'center',
