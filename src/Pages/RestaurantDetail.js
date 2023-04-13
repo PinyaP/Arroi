@@ -9,10 +9,8 @@ const RestaurantDetail = () => {
   const selectedRestaurant = restaurant.find((item) => item.id === parseInt(id));
   console.log(selectedRestaurant);
   return(
-    <div className='detail-box'>
-      <div>
-        {selectedRestaurant.title}
-      </div>
+    <div>
+      RestaurantDetail
     </div>
   );
 }
