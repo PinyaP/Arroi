@@ -7,7 +7,9 @@ import { Link } from 'react-router-dom';
 
 const SeeAll = () => {
   return (
-    <div className="top3-con">
+    <div class="seeall">
+      <p id="head">See All</p>
+      <div className="top3-con">
         {restaurant.map((values) => {
           const { id, title, desc, rating, review, img } = values;
           return (
@@ -29,6 +31,7 @@ const SeeAll = () => {
           );
         })}
       </div>
+    </div>
   )
 };
 

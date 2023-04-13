@@ -2,7 +2,7 @@ export const restaurant = [
   {
     id: 1,
     img: 'images/copper.png',
-    category: ['ranking', 'popular'],
+    category: ['ranking', 'popular','a'],
     title: 'Copper Buffet',
     desc: 'บุฟเฟต์ ,อาหารนานาชาติ',
     rating: '5.0',
@@ -11,7 +11,7 @@ export const restaurant = [
   {
     id: 2,
     img: 'images/steakholder.png',
-    category: ['ranking', 'popular'],
+    category: ['ranking', 'popular','a'],
     title: 'SteakHolder',
     desc: 'สเต็ก ,อาหาร',
     rating: '5.0',
@@ -20,7 +20,7 @@ export const restaurant = [
   {
     id: 3,
     img: 'images/ginzado.png',
-    category: ['ranking', 'popular'],
+    category: ['ranking', 'popular','a'],
     title: 'Ginza ทองหล่อ',
     desc: 'บุฟเฟต์ ,อาหารญี่ปุ่่น',
     rating: '5.0',
@@ -29,7 +29,7 @@ export const restaurant = [
   {
     id: 4,
     img: 'images/ginzado.png',
-    category: ['popular'],
+    category: ['popular','a'],
     title: 'MoMo Paradise',
     desc: 'บุฟเฟต์ ,อาหารญี่ปุ่น',
     rating: '5.0',
@@ -38,7 +38,7 @@ export const restaurant = [
   {
     id: 5,
     img: 'images/ginzado.png',
-    category: ['popular'],
+    category: ['popular','newres'],
     title: 'MoMo Paradise',
     desc: 'บุฟเฟต์ ,อาหารญี่ปุ่น',
     rating: '5.0',
@@ -47,7 +47,7 @@ export const restaurant = [
   {
     id: 6,
     img: 'images/ginzado.png',
-    category: ['popular'],
+    category: ['popular','newres'],
     title: 'MoMo Paradise',
     desc: 'บุฟเฟต์ ,อาหารญี่ปุ่น',
     rating: '5.0',

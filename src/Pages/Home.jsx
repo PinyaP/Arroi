@@ -25,10 +25,12 @@ const Home = () => {
           <button class="btn" onClick={() => filterResult('ranking')}>
             Ranking the top 3 restaurants
           </button>
-          <button class="btn" onClick={() => filterResult('popular')}>
+          <button class="btn" onClick={() => filterResult('a')}>
             Popular Restaurants
           </button>
-          <button class="btn">New Restaurants</button>
+          <button  class="btn" onClick={() => filterResult('newres')}>
+            New Restaurants
+          </button>
         </ul>
       </div>
       <div className="top3-con">
@@ -51,6 +53,9 @@ const Home = () => {
           );
         })}
       </div>
+
+      <button id="seeallbtn"><span>Hover </span></button>
+
     </div>
   );
 };
