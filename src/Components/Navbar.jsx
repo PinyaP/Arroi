@@ -1,66 +1,31 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import '../Styles/Navbar.css';
 
 function Navbar() {
   return (
-    <div
-      className="navbar-container"
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        position: 'sticky',
-        paddingRight: '10rem',
-      }}
-    >
+    <div className="navbar-container">
       <div>
         <Link to="/" className="site-title">
-          <img
-            style={{
-              width: '140px',
-              height: '55px',
-              paddingLeft: '63px',
-              marginTop: '8px',
-            }}
+          <img className='logo'
             src="images/ArroiLogo.png"
             alt="logo"
           />
         </Link>
       </div>
       <div>
-        <input
-          style={{
-            width: '300px',
-            height: '25px',
-            border: 'auto',
-            borderRadius: '8px',
-            textAlign: 'center',
-          }}
+        <input className='inputplace'
           type="text"
           placeholder="สถานที่ที่คุณต้องการไป.. "
         />
       </div>
-      <div>
-        <input
-          style={{
-            width: '300px',
-            height: '25px',
-            border: 'auto',
-            borderRadius: '8px 0px 0px 8px',
-            textAlign: 'center',
-          }}
+      <div className='box3'>
+        <input className='inputsearch'
           type="text"
-          placeholder="ร้านอาหาร/คาเฟ่"
+          placeholder="ร้านอาหาร/คาเฟ่" 
         />
-        <button
-          style={{
-            width: '30px',
-            height: '31px',
-            border: 'auto',
-            borderRadius: '0px 8px 8px 0px',
-          }}
-        >
+        <button id='button'>
           <AiOutlineSearch />
         </button>
       </div>

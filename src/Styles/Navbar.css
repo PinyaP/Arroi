@@ -1,0 +1,52 @@
+/* @media (max-width: 1000px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+} */
+
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-Content: space-between;
+    padding-Right: 10rem;
+
+}
+
+.logo {
+    width: 140px;
+    height: 55px;
+    padding-Left:63px;
+    margin-Top:8px;
+}
+
+.inputplace { 
+    width: 300px;
+    height:25px;
+    border: auto;
+    border-Radius: 8px;
+    margin-top: 20px;
+    text-Align:center;
+    /* flex: 50%; */
+}
+
+.inputsearch {
+    width: 270px;
+    height:25px;
+    border: auto;
+    border-Radius: 8px 0px 0px 8px;
+    margin: 20px 0 10px 0;
+    text-Align:center;
+    /* flex: 50%; */
+}
+
+#button {
+    width: 30px;
+    height:31px;
+    border: auto;
+    border-Radius: 0px 8px 8px 0px;
+}
+
+
+
+
