@@ -29,25 +29,25 @@ const Home = () => {
             Popular Restaurants
           </button>
           <button class="btn">New Restaurants</button>
-        </ul> 
+        </ul>
       </div>
       <div className="top3-con">
         {data.map((values) => {
           const { id, title, desc, rating, review, img } = values;
           return (
-            <div class="card" key={id}>
-                <img src={img} alt="/" />
+            <Link to={`/detail/${id}`} class="card" key={id}>
+              <img src={img} alt="/" />
               <div class="textborder">
                 <p class="headp">{title}</p>
                 <p class="subp">{desc}</p>
-                <div style={{ display: 'flex'}}>
-                  <p id="textstar">{rating}  <FaStar/></p>
+                <div style={{ display: 'flex' }}>
+                  <p id="textstar">
+                    {rating} <FaStar />
+                  </p>
                   <p id="textreview">{review} review</p>
-
                 </div>
               </div>
-              
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -55,4 +55,3 @@ const Home = () => {
   );
 };
 export default Home;
-
