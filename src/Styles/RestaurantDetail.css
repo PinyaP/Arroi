@@ -1,4 +1,14 @@
-.detail-box{
+.detail{
     width: 800;
     height: 250;
+    margin: auto;
+}
+p.headp {
+    font-Weight: bold;
+    font-Size: 24px;
+    margin-bottom: 5px;
+}
+p.subp {
+    font-Size: 12px;
+    margin:0;
 }
