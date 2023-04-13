@@ -10,7 +10,7 @@ const RestaurantDetail = () => {
   console.log(selectedRestaurant);
   return(
     <div>
-      RestaurantDetaill
+      RestaurantDetaillk
     </div>
   );
 }
