@@ -10,6 +10,7 @@ const RestaurantDetail = () => {
   const selectedRestaurant = restaurant.find((item) => item.id === parseInt(id));
   console.log(selectedRestaurant);
   return(
+    
     <div className='detail'>
       <p className='headp'>{selectedRestaurant.title}</p>
       <p className='headp'>{selectedRestaurant.category}</p>
