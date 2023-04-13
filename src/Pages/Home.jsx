@@ -54,7 +54,7 @@ const Home = () => {
         })}
       </div>
 
-      <button id="seeallbtn"><span>Hover </span></button>
+      <button id="seeallbtn"><span>See All </span></button>
 
     </div>
   );
