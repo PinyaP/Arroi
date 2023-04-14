@@ -8,12 +8,19 @@ import { FaStar } from 'react-icons/fa';
 
 const Home = () => {
   const [data, setData] = useState(restaurant);
-
+  const [showLastButton, setShowLastButton] = useState(false);
+  
   const filterResult = (catItem) => {
     const result = restaurant.filter((curData) =>
       curData.category.includes(catItem)
     );
     setData(result);
+    
+    if (catItem === 'a' || catItem === 'newres') {
+      setShowLastButton(true);
+    } else {
+      setShowLastButton(false);
+    }
   };
 
   return (
@@ -53,10 +60,9 @@ const Home = () => {
           );
         })}
       </div>
-
-      <button id="seeallbtn"><span>Hover </span></button>
-
+      {showLastButton && <button id="seeallbtn"><span>Hover </span></button>}
     </div>
   );
 };
+
 export default Home;
