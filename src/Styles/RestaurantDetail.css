@@ -4,6 +4,7 @@
     height: 250px;
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
+    float: left;
 }
 .less-detail{
     float: right;
@@ -12,11 +13,13 @@
     height: 545px;
     border-radius: 15px;
     box-shadow: -2px 3px 3px grey;
+
 }
-p.headp {
+p.headpp {
     font-Weight:bold;
     font-Size: 38px;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 p.subp {
     font-Size: 18px;

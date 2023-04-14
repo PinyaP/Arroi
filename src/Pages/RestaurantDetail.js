@@ -16,7 +16,7 @@ const RestaurantDetail = () => {
     </div>
 
     <div className='detail'>
-      <p className='headp'>{selectedRestaurant.title}</p>
+      <p className='headpp'>{selectedRestaurant.title}</p>
       <p id='place'>Thammasat Rungsit Campus,Pathumthani</p>
 
       <div style={{ display: 'flex' }}>
