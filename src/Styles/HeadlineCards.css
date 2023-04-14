@@ -87,7 +87,6 @@ p#head {
     transform: translate(-50%, -50%);
 }
 
-
 #seeallbtn {
     background-color: #FFD1D1;
     border-radius: 10px;
@@ -100,7 +99,6 @@ p#head {
     transition: all 0.5s;
     cursor: pointer;
     margin-bottom: 20px;
-
 }
 
 #seeallbtn span {
@@ -128,42 +126,38 @@ p#head {
     right: 0;
 }
 
-
 .rank1,.rank2,.rank3 {
-    /* border: 1px solid green; */
     font-size: 20px;
-    color: #ff4000;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
 }
 
 .rank1 {
-    /* margin-top: 70px; */
-    padding-top: 0;
-    padding-left: 0;
-    /* background-color: #FFD1D1;*/
-    
-    
+    padding-bottom: 10px;
 }
 
 .rank2 {
-    /* margin-top: 90px; */
-    padding-top: 30px;
-    padding-left: 0;
+    padding-top: 20px;
 }
 
 .rank3 {
-    /* margin-top: 90px; */
-    padding-top: 30px;
-    padding-left: 0;
+    padding-top: 20px;
 }
 
 .con-rank {
-    /* border: 1px solid rgb(247, 7, 47); */
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     gap: 18rem;
+    padding-top: 0px;
+}
 
+#fireicon {
+    color: #ff4000;
+    margin-left: 10px;
 }
