@@ -1,9 +1,28 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
+import { restaurant } from '../data.js';
 import '../Styles/Navbar.css';
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  function handleSearch(event) {
+    
+    event.preventDefault();
+    const searchQuery = event.target.elements.search.value;
+
+    const matchingRestaurant = restaurant.find((item) =>
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    if (matchingRestaurant) {
+      navigate(`/detail/${matchingRestaurant.id}`);
+    } else {
+      alert(`Sorry, we couldn't find a restaurant`);
+    }
+  }
+
   return (
     <div className="navbar-container">
       <div>
@@ -21,14 +40,18 @@ function Navbar() {
         />
       </div>
       <div className='box3'>
-        <input className='inputsearch'
-          type="text"
-          placeholder="ร้านอาหาร/คาเฟ่" 
+      <form onSubmit={handleSearch}>
+        <input
+          className='inputsearch'
+          type='text'
+          placeholder='ร้านอาหาร/คาเฟ่'
+          name='search'
         />
-        <button id='button'>
+        <button type='submit' id='button'>
           <AiOutlineSearch />
         </button>
-      </div>
+      </form>
+    </div>
     </div>
   );
 }
