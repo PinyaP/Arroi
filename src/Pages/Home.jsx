@@ -46,8 +46,8 @@ const Home = () => {
       </div>
 
       <div className='con-rank'>
-        {showRank && <p class='rank2'>NO.2 <BsFire /></p>}
-        {showRank && <p class='rank1'>NO.1 <BsFire/> </p>}
+        {showRank && <p class='rank2'>NO.2 <BsFire /><BsFire /></p>}
+        {showRank && <p class='rank1'>NO.1 <BsFire/><BsFire /><BsFire /> </p>}
         {showRank && <p class='rank3'>NO.3 <BsFire/> </p>}
       </div>
       

@@ -39,7 +39,7 @@ export const restaurant = [
     id: 5,
     img: 'images/ginzado.png',
     category: ['popular','newres'],
-    title: 'MoMo Paradise',
+    title: 'MeMo Paradise',
     desc: 'บุฟเฟต์ ,อาหารญี่ปุ่น',
     rating: '5.0',
     review: 300,
