@@ -1,5 +1,5 @@
 .top3-con {
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -79,18 +79,28 @@ p#head {
     margin: 50px 0 0 20px;
 }
 
+.con-button {
+    margin-top: 10px;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 #seeallbtn {
     background-color: #FFD1D1;
     border-radius: 10px;
     border: none;
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
-    width: 200px;
+    font-size: 17px;
+    padding: 10px;
+    width: 150px;
+    height: 60px;
     transition: all 0.5s;
     cursor: pointer;
-    border: 1.5px solid midnightblue;
-    margin-left: 50px;
+    margin-bottom: 20px;
+
 }
 
 #seeallbtn span {
@@ -116,4 +126,44 @@ p#head {
 #seeallbtn:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+
+.rank1,.rank2,.rank3 {
+    /* border: 1px solid green; */
+    font-size: 20px;
+    color: #ff4000;
+    font-weight: bold;
+}
+
+.rank1 {
+    /* margin-top: 70px; */
+    padding-top: 0;
+    padding-left: 0;
+    /* background-color: #FFD1D1;*/
+    
+    
+}
+
+.rank2 {
+    /* margin-top: 90px; */
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.rank3 {
+    /* margin-top: 90px; */
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.con-rank {
+    /* border: 1px solid rgb(247, 7, 47); */
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 18rem;
+
 }
