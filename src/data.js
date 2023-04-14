@@ -13,7 +13,7 @@ export const restaurant = [
     img: 'images/steakholder.png',
     category: ['ranking', 'popular','a'],
     title: 'SteakHolder',
-    desc: 'สเต็ก ,อาหาร',
+    desc: 'สเต็ก ,อาหารนานาชาติ',
     rating: '5.0',
     review: 90,
   },
