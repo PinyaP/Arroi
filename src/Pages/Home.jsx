@@ -58,7 +58,7 @@ const Home = () => {
           const { id, title, desc, rating, review, img } = values;
           return (
             <Link to={`/detail/${id}`} class="card" key={id}>
-              <img src={img} alt="/" />
+              <img src={img} alt="/" class={id === 2 ? 'middle-image' : ''}/>
               <div class="textborder">
                 <p class="headp">{title}</p>
                 <p class="subp">{desc}</p>
