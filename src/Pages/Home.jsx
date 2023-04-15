@@ -7,6 +7,8 @@ import { restaurant } from '../data.js';
 import { FaStar } from 'react-icons/fa';
 import { BsFire } from 'react-icons/bs';
 
+// import {Button} from 'react-bootstrap';
+
 const Home = () => {
   const [data, setData] = useState(restaurant);
   const [showLastButton, setShowLastButton] = useState(false);
@@ -75,10 +77,11 @@ const Home = () => {
                 </div>
               </div>
             </Link>
+            
           );
         })}
         <div className='con-button'>
-        {showLastButton && <button id="seeallbtn"><span>See All </span></button>}
+          {showLastButton && <Link to= {`/see-all`} id="seeallbtn" ><span>See All </span></Link>}
         </div>
       </div>
       

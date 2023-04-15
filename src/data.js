@@ -53,4 +53,22 @@ export const restaurant = [
     rating: '5.0',
     review: 300,
   },
+  {
+    id: 7,
+    img: 'images/ginzado.png',
+    category: ['newres'],
+    title: 'hoho Paradise',
+    desc: 'บุฟเฟต์ ,อาหารญี่ปุ่น',
+    rating: '5.0',
+    review: 300,
+  },
+  {
+    id: 8,
+    img: 'images/ginzado.png',
+    category: ['newres'],
+    title: 'jujue',
+    desc: 'บุฟเฟต์ ,อาหารญี่ปุ่น',
+    rating: '5.0',
+    review: 300,
+  },
 ];
