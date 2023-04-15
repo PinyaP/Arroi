@@ -11,7 +11,7 @@ const Home = () => {
   const [data, setData] = useState(restaurant);
   const [showLastButton, setShowLastButton] = useState(false);
   const [showRank, setShowRank] = useState(false);
-  const [showSecondImage, setShowSecondImage] = useState(false);
+  const [moveSecondImage, setMoveSecondImage] = useState(false);
   
   const filterResult = (catItem) => {
     const result = restaurant.filter((curData) =>
@@ -23,11 +23,11 @@ const Home = () => {
     if (catItem === 'a' || catItem === 'newres') {
       setShowLastButton(true);
       setShowRank(false);
-      setShowSecondImage(false);
+      setMoveSecondImage(false);
     } else {
       setShowLastButton(false);
       setShowRank(true);
-      setShowSecondImage(true);
+      setMoveSecondImage(true);
     }
 
   };
@@ -62,8 +62,8 @@ const Home = () => {
         {data.map((values) => {
           const { id, title, desc, rating, review, img } = values;
           return (
-            <Link to={`/detail/${id}`} class="card" key={id}>
-              <img src={img} alt="/" className={id === 2 && showSecondImage ? 'middle-image' : ''}/>
+            <Link to={`/detail/${id}`} class="card" key={id} style={{ marginTop : id === 2 && moveSecondImage ? '-30px' : '0px'}} >
+              <img src={img} alt="/" />
               <div class="textborder">
                 <p class="headp">{title}</p>
                 <p class="subp">{desc}</p>
