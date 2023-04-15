@@ -79,15 +79,9 @@ const Home = () => {
             </Link>
           );
         })}
-<<<<<<< HEAD
-        <div className='con-button'>
-        {showLastButton && <Link to={`/see-all/${category}`} id="seeallbtn"><span>See All</span></Link>}
-        </div>
-=======
->>>>>>> 7ca031aa42dcbbd3ce33a142b9b259b2f9d1cfb2
       </div>
       <div className='con-button'>
-        {showLastButton && <Link to= {`/see-all`} id="seeallbtn" ><span>See All </span></Link>}
+        {showLastButton && <Link to= {`/see-all/${category}`} id="seeallbtn" ><span>See All </span></Link>}
       </div>
     </div>
     
