@@ -11,20 +11,25 @@ const Home = () => {
   const [data, setData] = useState(restaurant);
   const [showLastButton, setShowLastButton] = useState(false);
   const [showRank, setShowRank] = useState(false);
+  const [showSecondImage, setShowSecondImage] = useState(false);
   
   const filterResult = (catItem) => {
     const result = restaurant.filter((curData) =>
       curData.category.includes(catItem)
     );
+    
     setData(result);
     
     if (catItem === 'a' || catItem === 'newres') {
       setShowLastButton(true);
       setShowRank(false);
+      setShowSecondImage(false);
     } else {
       setShowLastButton(false);
       setShowRank(true);
+      setShowSecondImage(true);
     }
+
   };
 
   return (
@@ -58,7 +63,7 @@ const Home = () => {
           const { id, title, desc, rating, review, img } = values;
           return (
             <Link to={`/detail/${id}`} class="card" key={id}>
-              <img src={img} alt="/" class={id === 2 ? 'middle-image' : ''}/>
+              <img src={img} alt="/" className={id === 2 && showSecondImage ? 'middle-image' : ''}/>
               <div class="textborder">
                 <p class="headp">{title}</p>
                 <p class="subp">{desc}</p>
