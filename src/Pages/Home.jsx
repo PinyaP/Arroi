@@ -64,7 +64,7 @@ const Home = () => {
           return (
             <Link to={`/detail/${id}`} class="card" key={id}>
               <img src={img} alt="/" className={id === 2 && showSecondImage ? 'middle-image' : ''}/>
-              <div class="textborder">
+              <div className={id === 2 && showSecondImage ? 'middle-data' : 'textborder'}>
                 <p class="headp">{title}</p>
                 <p class="subp">{desc}</p>
                 <div style={{ display: 'flex' }}>

@@ -14,8 +14,8 @@
     width: 311px;
     height: 346px;
     cursor: pointer;
-    border-radius: 20px;
-    box-shadow: 2px 3px #b9b8b8;
+    /* border-radius: 20px; */
+    /* box-shadow: 2px 3px #b9b8b8; */
 }
 
 p.headp {
@@ -31,6 +31,8 @@ p.subp {
 
 .card img {
     width: 100%;
+    box-shadow: 2px 3px #b9b8b8;
+    border-radius: 20px;
 }
 
 .textborder {
@@ -41,6 +43,7 @@ p.subp {
     width: 100%;
     height: 40%;
     border-radius: 0 0 20px 20px;
+    box-shadow: 2px 3px #b9b8b8;
 }
 
 p#textstar {
