@@ -14,11 +14,11 @@ const SeeAll = () => {
       <p id="head">See All</p>
       <div className="top3-con">
         {categoryRestaurant.map((values) => {
-          const { id, title, desc, rating, review, img } = values;
+          const { id, title, desc, rating, review, img1 } = values;
           return (
             <Link to={`/detail/${id}`}>
               <div  class="card" key={id}>
-                <img src={"/" + img} alt="/" />
+                <img src={"/" + img1} alt="/" />
                 <div class="textborder">
                   <p class="headp">{title}</p>
                   <p class="subp">{desc}</p>
@@ -38,6 +38,4 @@ const SeeAll = () => {
   )
 };
     
-
-
 export default SeeAll;

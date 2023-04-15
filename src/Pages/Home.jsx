@@ -7,8 +7,6 @@ import { restaurant } from '../data.js';
 import { FaStar } from 'react-icons/fa';
 import { BsFire } from 'react-icons/bs';
 
-// import {Button} from 'react-bootstrap';
-
 const Home = () => {
   const [data, setData] = useState(restaurant);
   const [showLastButton, setShowLastButton] = useState(false);
@@ -33,7 +31,6 @@ const Home = () => {
       setShowRank(true);
       setMoveSecondImage(true);
     }
-
   };
 
   return (
@@ -62,10 +59,10 @@ const Home = () => {
       
       <div className="top3-con">
         {data.map((values) => {
-          const { id, title, desc, rating, review, img } = values;
+          const { id, title, desc, rating, review, img1 } = values;
           return (
             <Link to={`/detail/${id}`} class="card" key={id} style={{ marginTop : id === 2 && moveSecondImage ? '-30px' : '0px'}} >
-              <img src={img} alt="/" />
+              <img src={img1} alt="/" />
               <div class="textborder">
                 <p class="headp">{title}</p>
                 <p class="subp">{desc}</p>
@@ -80,11 +77,12 @@ const Home = () => {
           );
         })}
       </div>
+      
       <div className='con-button'>
         {showLastButton && <Link to= {`/see-all/${category}`} id="seeallbtn" ><span>See All </span></Link>}
       </div>
+
     </div>
-    
   );
 };
 
