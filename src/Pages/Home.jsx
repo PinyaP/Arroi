@@ -54,8 +54,6 @@ const Home = () => {
 
       <div className='con-rank'>
         {showRank && <p class='rank2'>NO.2 <h3 id='fireicon'><BsFire /></h3></p>}
-        
-        
         {showRank && <p class='rank1'>NO.1 <h2 id='fireicon'><BsFire /></h2></p>}
         {showRank && <p class='rank3'>NO.3 <h4 id='fireicon'><BsFire /></h4></p>}
       </div>
@@ -77,14 +75,12 @@ const Home = () => {
                 </div>
               </div>
             </Link>
-            
           );
         })}
-        <div className='con-button'>
-          {showLastButton && <Link to= {`/see-all`} id="seeallbtn" ><span>See All </span></Link>}
-        </div>
       </div>
-      
+      <div className='con-button'>
+        {showLastButton && <Link to= {`/see-all`} id="seeallbtn" ><span>See All </span></Link>}
+      </div>
     </div>
     
   );
