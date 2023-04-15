@@ -14,8 +14,10 @@ const Home = () => {
   const [showLastButton, setShowLastButton] = useState(false);
   const [showRank, setShowRank] = useState(false);
   const [moveSecondImage, setMoveSecondImage] = useState(false);
+  const [category, setCategory] = useState(null);
   
   const filterResult = (catItem) => {
+    setCategory(catItem);
     const result = restaurant.filter((curData) =>
       curData.category.includes(catItem)
     );
@@ -81,7 +83,7 @@ const Home = () => {
           );
         })}
         <div className='con-button'>
-          {showLastButton && <Link to= {`/see-all`} id="seeallbtn" ><span>See All </span></Link>}
+        {showLastButton && <Link to={`/see-all/${category}`} id="seeallbtn"><span>See All</span></Link>}
         </div>
       </div>
       
