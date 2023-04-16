@@ -9,7 +9,7 @@
 }
 
 .card {
-    color:#000000;
+    color: #000000;
     position: relative;
     width: 311px;
     height: 346px;
@@ -27,7 +27,7 @@ p.headp {
 
 p.subp {
     font-Size: 12px;
-    margin:0;
+    margin: 0;
 }
 
 .card img {
@@ -51,7 +51,7 @@ p#textstar {
     font-Size: 16px;
     font-Weight: bold;
     color: #FFD1D1;
-    margin-left: 20px ;
+    margin-left: 20px;
     width: 53px;
     height: 28px;
     border-radius: 10px;
@@ -101,7 +101,7 @@ p#head {
     padding: 10px 20px 10px 20px;
     transition: all 0.5s;
     cursor: pointer;
-    color:#000000;
+    color: #000000;
 }
 
 #seeallbtn span {
@@ -110,7 +110,7 @@ p#head {
     position: relative;
     transition: 0.5s;
 }
-  
+
 #seeallbtn span:after {
     content: '\00bb';
     position: absolute;
@@ -119,7 +119,7 @@ p#head {
     right: -20px;
     transition: 0.5s;
 }
-  
+
 #seeallbtn:hover span {
     padding-right: 25px;
 }
@@ -129,7 +129,9 @@ p#head {
     right: 0;
 }
 
-.rank1,.rank2,.rank3 {
+.rank1,
+.rank2,
+.rank3 {
     font-size: 20px;
     font-weight: bold;
     display: flex;
