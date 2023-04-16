@@ -8,14 +8,17 @@ import { FaStar } from 'react-icons/fa';
 import { BsFacebook } from 'react-icons/bs';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { BsLine } from 'react-icons/bs';
+import { IoMdPin } from 'react-icons/io';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 
 const RestaurantDetail = () => {
   const { id } = useParams();
   const selectedRestaurant = restaurant.find((item) => item.id === parseInt(id));
   console.log(selectedRestaurant);
   return(
-    <>
+    <div className='container'>
     <div className='picture-border'>
+      {/* <img src={selectedRestaurant.img1} alt="/" /> */}
     </div>
 
     <div className='detail'>
@@ -50,8 +53,24 @@ const RestaurantDetail = () => {
       <p><AiOutlineInstagram/></p>
       <p><BsLine/></p>
 
+      <div className='map'>
+      <IoMdPin/><p>lorem ipsum ipsum lorem</p>
+      <BsFillTelephoneFill/><p>088-888-8888</p>
+      </div>
+      <div className='rate'>
+        <p>rateee</p>
+      </div>
+      <div className='comment'>
+        <p>comment</p>
+      </div>
+      <div className='suit'>
+        <p>suit</p>
+      </div>
+      <div className='top'>
+        <p>top</p>
+      </div>
     </div>
-    </>
+    </div>
   );
 }
 
