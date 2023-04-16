@@ -15,13 +15,14 @@
     height: 346px;
     cursor: pointer;
     border-radius: 20px;
-    box-shadow: 2px 3px #b9b8b8;
+    box-shadow: 2px 3px 3px #b9b8b8;
 }
 
 p.headp {
     font-Weight: bold;
     font-Size: 24px;
     margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 p.subp {
@@ -31,6 +32,8 @@ p.subp {
 
 .card img {
     width: 100%;
+    box-shadow: 2px 3px 3px #b9b8b8;
+    border-radius: 20px;
 }
 
 .textborder {
@@ -83,11 +86,10 @@ p#head {
 }
 
 .con-button {
-    margin-top: 10px;
-    position: absolute;
-    bottom: -15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 #seeallbtn {
@@ -96,12 +98,10 @@ p#head {
     border: none;
     text-align: center;
     font-size: 17px;
-    padding: 10px;
-    width: 150px;
-    height: 60px;
+    padding: 10px 20px 10px 20px;
     transition: all 0.5s;
     cursor: pointer;
-    margin-bottom: 20px;
+    color:#000000;
 }
 
 #seeallbtn span {
@@ -139,15 +139,17 @@ p#head {
 }
 
 .rank1 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .rank2 {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 0;
 }
 
 .rank3 {
-    padding-top: 20px;
+    padding-bottom: 0;
+    padding-top: 10px;
 }
 
 .con-rank {
