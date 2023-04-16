@@ -9,25 +9,28 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 3rem;
-    background-color: orange;
+    max-width: 95%;
+    margin-bottom: 3rem;
 }
 
 .detail {
+    padding-left: 2rem;
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
+    margin-bottom: 3rem;
 }
 
 .less-detail {
-
+    padding-left: 2rem;
     border-radius: 15px;
     box-shadow: -2px 3px 3px grey;
 }
 
 .map {
     background-color: green;
-
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
+    display: flex;
 }
 
 p.headpp {
@@ -49,8 +52,8 @@ p.subp {
         'img1 img1 img1 img2'
         'img1 img1  img1 img3'
     ;
-    background-color: aquamarine;
-    gap: 3rem;
+    /* background-color: aquamarine; */
+    gap: 1rem;
 }
 
 .img1 {
@@ -66,15 +69,14 @@ p.subp {
 }
 
 .picture-border img {
-    width: 50%;
+    width: 100%;
 }
 
-p#textstar {
+p#textstar2 {
     background-color: #F24D4D;
     font-Size: 16px;
     font-Weight: bold;
     color: #FFD1D1;
-    margin-left: 25px;
     width: 53px;
     height: 28px;
     border-radius: 10px;
@@ -95,7 +97,6 @@ p#avai {
     height: 28px;
     background-color: #82CD67;
     padding: 0;
-    margin-left: 25px;
     font-size: 16px;
 }
 
@@ -121,14 +122,14 @@ p#time2 {
 p#seat {
     font-size: 24px;
     font-weight: bold;
+    margin:0;
 }
 
-p#border-bottom {
+#border-bottom {
     border-bottom: solid 0.5px black;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 12px;
-    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    margin-top: 10px;
 }
 
 .review {
@@ -137,10 +138,17 @@ p#border-bottom {
     display: grid;
     gap: 3rem;
     grid-template-columns: 1fr 1fr;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .sui-top {
-    background: #F24D4D;
+    /* background: #F24D4D; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+.less-detail span {
+    float: right;
+}
+

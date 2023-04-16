@@ -37,7 +37,7 @@ const Home = () => {
     <div className="home-container">
       <Slickfood />
       <div className="nav">
-        <p>RECOMMEND FOR YOU</p>
+        <p style={{marginLeft:'30px'}}>RECOMMEND FOR YOU</p>
         <ul style={{ gap: '1rem' }}>
           <button class="btn" onClick={() => filterResult('ranking')}>
             Ranking the top 3 restaurants

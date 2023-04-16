@@ -18,18 +18,18 @@ const RestaurantDetail = () => {
   return (
     <div className="container">
       <div className="picture-border">
-        <img className="img1" src={selectedRestaurant.img1} alt="" />
-        <img className="img2" src={selectedRestaurant.img1} alt="" />
-        <img className="img3" src={selectedRestaurant.img1} alt="" />
+        <img className="img1" src={selectedRestaurant.img2} alt="" />
+        <img className="img2" src={selectedRestaurant.img3} alt="" />
+        <img className="img3" src={selectedRestaurant.img4} alt="" />
       </div>
       <div className="detail-con">
-        <div>
+        <div className='detail-map'>
           <div className="detail">
             <p className="headpp">{selectedRestaurant.title}</p>
             <p id="place">Thammasat Rungsit Campus,Pathumthani</p>
 
             <div style={{ display: 'flex' }}>
-              <p id="textstar">
+              <p id="textstar2">
                 {selectedRestaurant.rating} <FaStar />
               </p>
               <p id="textreview">{selectedRestaurant.review} review</p>
@@ -42,17 +42,22 @@ const RestaurantDetail = () => {
             </div>
           </div>
           <div className="map">
-            <p>
-              <IoMdPin /> lorem ipsum ipsum lorem
-            </p>
-            <p>
-              <BsFillTelephoneFill /> 088-888-8888
-            </p>
+            <div className='left-map'>
+              <img src={selectedRestaurant.img1} alt="" />
+            </div>
+            <div className='right-map'>
+              <p>
+                <IoMdPin /> lorem ipsum ipsum lorem
+              </p>
+              <p>
+                <BsFillTelephoneFill /> 088-888-8888
+              </p>
+            </div>
           </div>
         </div>
         <div className="less-detail">
           <p id="time2">ช่วงเวลา</p>
-          <p>ทุกวัน 16:00-20:00</p>
+          <p>ทุกวัน <span>16:00-20:00</span></p>
           <p id="conve">อำนวยความสะดวก</p>
           <p>ที่จอดรถ</p>
           <p>Free-Wifi</p>
@@ -95,7 +100,7 @@ const RestaurantDetail = () => {
             </div>
           </div>
         </div>
-        <div className="left-review">
+        <div className="right-review">
           <h1>129 comments</h1>
           <li>comments</li>
           <li>comments</li>
