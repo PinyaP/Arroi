@@ -22,7 +22,7 @@ const Home = () => {
     
     setData(result);
     
-    if (catItem === 'a' || catItem === 'newres') {
+    if (catItem === 'pop' || catItem === 'new') {
       setShowLastButton(true);
       setShowRank(false);
       setMoveSecondImage(false);
@@ -42,10 +42,10 @@ const Home = () => {
           <button class="btn" onClick={() => filterResult('ranking')}>
             Ranking the top 3 restaurants
           </button>
-          <button class="btn" onClick={() => filterResult('a')}>
+          <button class="btn" onClick={() => filterResult('pop')}>
             Popular Restaurants
           </button>
-          <button  class="btn" onClick={() => filterResult('newres')}>
+          <button  class="btn" onClick={() => filterResult('new')}>
             New Restaurants
           </button>
         </ul>
