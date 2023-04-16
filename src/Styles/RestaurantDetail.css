@@ -1,51 +1,80 @@
+.container {
+    width: 100%;
 
-.detail{
-    margin: 20px;
-    width: 800px;
-    height: 250px;
+}
+
+.detail-con {
+    padding-top: 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    background-color: orange;
+}
+
+.detail {
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
-    float: left;
 }
-.less-detail{
-    float: right;
-    margin: 20px;
-    margin-right: 90px;
-    width: 500px;
-    height: 545px;
+
+.less-detail {
+
     border-radius: 15px;
     box-shadow: -2px 3px 3px grey;
 }
-.map{
-    float: left;
+
+.map {
     background-color: green;
-    width: 800px;
-    height: 250px;
+
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px grey;
 }
+
 p.headpp {
-    font-Weight:bold;
+    font-Weight: bold;
     font-Size: 38px;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 0;
 }
+
 p.subp {
     font-Size: 18px;
-    margin:0;
+    margin: 0;
 }
-.picture-border{
-    margin: 20px;
-    width: 1400px;
-    height: 360px;
-    border-radius: 15px;
-    background-color:black;
-    width:100%;
+
+.picture-border {
+    display: grid;
+    width: 100%;
+    grid-template:
+        'img1 img1 img1 img2'
+        'img1 img1  img1 img3'
+    ;
+    background-color: aquamarine;
+    gap: 3rem;
 }
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.picture-border img {
+    width: 50%;
+}
+
 p#textstar {
     background-color: #F24D4D;
     font-Size: 16px;
     font-Weight: bold;
     color: #FFD1D1;
-    margin-left: 25px ;
+    margin-left: 25px;
     width: 53px;
     height: 28px;
     border-radius: 10px;
@@ -69,29 +98,49 @@ p#avai {
     margin-left: 25px;
     font-size: 16px;
 }
-p#place{
+
+p#place {
     margin-top: 0;
 }
-p#time{
+
+p#time {
     margin-left: 0;
     font-weight: bold;
 }
-p#conve{
+
+p#conve {
     font-size: 24px;
     font-weight: bold;
 }
-p#time2{
+
+p#time2 {
     font-size: 24px;
     font-weight: bold;
 }
-p#seat{
+
+p#seat {
     font-size: 24px;
     font-weight: bold;
 }
-p#border-bottom{
+
+p#border-bottom {
     border-bottom: solid 0.5px black;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 12px;
     padding-bottom: 5px;
+}
+
+.review {
+    margin-top: 3rem;
+    background: #FFD1D1;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sui-top {
+    background: #F24D4D;
+    display: flex;
+    justify-content: space-between;
 }
