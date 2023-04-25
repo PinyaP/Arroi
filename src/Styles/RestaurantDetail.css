@@ -27,7 +27,7 @@
 }
 
 .map {
-    background-color: green;
+    /* background-color: green; */
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
     display: flex;
@@ -107,6 +107,8 @@ p#place {
 p#time {
     margin-left: 0;
     font-weight: bold;
+    padding-left: 15px;
+    padding-top: 3px;
 }
 
 p#conve {
@@ -152,3 +154,43 @@ p#seat {
     float: right;
 }
 
+.suitable {
+    background-color: #82CD67;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px grey;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 2rem;
+}
+
+.suitable h3 {
+    /* border: 1px solid orange; */
+    margin: 2px;
+}
+
+.suitable li {
+    /* border: 1px solid rgb(255, 0, 221); */
+    margin: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.top {
+    background-color: #cd6767;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px grey;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 2rem;
+}
+.top h2 {
+    /* border: 1px solid orange; */
+    margin: 2px;
+}
+
+.rating {
+    border: 1px solid rgb(64, 0, 255);
+    margin-bottom: 2rem;
+}

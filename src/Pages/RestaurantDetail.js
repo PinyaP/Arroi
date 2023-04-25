@@ -8,6 +8,10 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { BsLine } from 'react-icons/bs';
 import { IoMdPin } from 'react-icons/io';
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import { BsFillPeopleFill } from 'react-icons/bs';
+import { GiLovers } from 'react-icons/gi';
+import { MdFamilyRestroom } from 'react-icons/md';
+
 
 const RestaurantDetail = () => {
   const { id } = useParams();
@@ -89,9 +93,9 @@ const RestaurantDetail = () => {
           <div className="sui-top">
             <div className="suitable">
               <h3>Suitable for</h3>
-              <li>46%</li>
-              <li>27%</li>
-              <li>22%</li>
+              <li><BsFillPeopleFill/>&ensp;46%&ensp;Friends</li>
+              <li><GiLovers/>&ensp;27%&ensp;Lover</li>
+              <li><MdFamilyRestroom/>&ensp;22%&ensp;Family</li>
             </div>
             <div className="top">
               <h2>TOP</h2>
