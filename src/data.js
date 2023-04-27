@@ -5,6 +5,7 @@ export const restaurant = [
     img2: '../images/FRAN2.png',
     img3: '../images/FRAN3.png',
     img4: '../images/FRAN4.png',
+    rate: '../images/rating.png',
     category: ['ranking', 'popular', 'pop'],
     title: 'Fran’s Brunch & Greens',
     desc: 'คาเฟ่, อาหารเช้า',

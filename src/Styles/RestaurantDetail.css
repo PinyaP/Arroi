@@ -136,7 +136,6 @@ p#seat {
 
 .review {
     margin-top: 3rem;
-    background: #FFD1D1;
     display: grid;
     gap: 3rem;
     grid-template-columns: 1fr 1fr;
@@ -145,7 +144,6 @@ p#seat {
 }
 
 .sui-top {
-    /* background: #F24D4D; */
     display: flex;
     justify-content: space-around;
 }
@@ -155,42 +153,106 @@ p#seat {
 }
 
 .suitable {
-    background-color: #82CD67;
-    padding: 20px;
+    padding-left: 20px;
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
-    width: 200px;
-    height: 120px;
+    width: 50%;
+    margin-right: 40px;
     margin-bottom: 2rem;
 }
 
 .suitable h3 {
-    /* border: 1px solid orange; */
-    margin: 2px;
+    margin: 0; 
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
 .suitable li {
-    /* border: 1px solid rgb(255, 0, 221); */
     margin: 10px;
     margin-left: 10px;
     list-style-type: none;
 }
 
 .top {
-    background-color: #cd6767;
-    padding: 20px;
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
-    width: 200px;
-    height: 120px;
     margin-bottom: 2rem;
+    width: 50%;
+    
 }
+
 .top h2 {
-    /* border: 1px solid orange; */
-    margin: 2px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 0; 
+    margin-left: 1rem;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.top h2 p {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.top p {
+    padding-top: 5px;
+}
+
+.top h4 {
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-top: -20px;
+    font-size: 15px;
+
 }
 
 .rating {
-    border: 1px solid rgb(64, 0, 255);
+    margin-bottom: 2.5rem; 
+    /* border-radius: 15px;
+    box-shadow: 2px 3px 3px grey; */
+}
+
+.right-review {
+    border-radius: 15px;
+    box-shadow: -2px 3px 3px grey;
     margin-bottom: 2rem;
+}
+
+.rating h1 {
+    display: flex;
+}
+
+.rating h1 #staricon {
+    color: #F29D38;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.right-review h1 {
+    display: flex;
+    margin: 30px;
+    font-size: 28px;
+}
+
+.right-review h1 #fireicon {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.boxcomment li {
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    border-radius: 5px;
+    box-shadow: -1px 2px 1px grey;
+    margin-bottom: 20px;
+}
+
+.rateimg {
+    margin-left: 30px;
 }

@@ -11,6 +11,8 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { BsFillPeopleFill } from 'react-icons/bs';
 import { GiLovers } from 'react-icons/gi';
 import { MdFamilyRestroom } from 'react-icons/md';
+import { BsFire } from 'react-icons/bs';
+import { BsFillStarFill } from 'react-icons/bs';
 
 
 const RestaurantDetail = () => {
@@ -83,12 +85,13 @@ const RestaurantDetail = () => {
       <div className="review">
         <div className="left-review">
           <div className="rating">
-            <h1>Rating 4.8 out of 5</h1>
-            <li>5</li>
+            <h1>Rating 4.8 out of 5 <p id='staricon'><BsFillStarFill/></p></h1>
+            {/* <li>5</li>
             <li>4</li>
             <li>3</li>
             <li>2</li>
-            <li>1</li>
+            <li>1</li> */}
+            <img className='rateimg' src={selectedRestaurant.rate} alt="" />
           </div>
           <div className="sui-top">
             <div className="suitable">
@@ -98,17 +101,19 @@ const RestaurantDetail = () => {
               <li><MdFamilyRestroom/>&ensp;22%&ensp;Family</li>
             </div>
             <div className="top">
-              <h2>TOP</h2>
+              <h2>TOP <p id='fireicon'><BsFire/></p></h2>
               <h4>#2 from 4322</h4>
               <p>Steakhouse in Pathum Thani</p>
             </div>
           </div>
         </div>
         <div className="right-review">
-          <h1>129 comments</h1>
-          <li>comments</li>
-          <li>comments</li>
-          <li>comments</li>
+          <h1>129 comments <p id='fireicon'><BsFire/></p></h1>
+          <div className='boxcomment'>
+            <li>comments</li>
+            <li>comments</li>
+            <li>comments</li>
+          </div>
         </div>
       </div>
     </div>
