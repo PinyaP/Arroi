@@ -1,51 +1,82 @@
+.container {
+    width: 100%;
 
-.detail{
-    margin: 20px;
-    width: 800px;
-    height: 250px;
+}
+
+.detail-con {
+    padding-top: 3rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    max-width: 95%;
+    margin-bottom: 3rem;
+}
+
+.detail {
+    padding-left: 2rem;
     border-radius: 15px;
     box-shadow: 2px 3px 3px grey;
-    float: left;
+    margin-bottom: 3rem;
 }
-.less-detail{
-    float: right;
-    margin: 20px;
-    margin-right: 90px;
-    width: 500px;
-    height: 545px;
+
+.less-detail {
+    padding-left: 2rem;
     border-radius: 15px;
     box-shadow: -2px 3px 3px grey;
 }
-.map{
-    float: left;
-    background-color: green;
-    width: 800px;
-    height: 250px;
+
+.map {
+    /* background-color: green; */
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px grey;
+    display: flex;
 }
+
 p.headpp {
-    font-Weight:bold;
+    font-Weight: bold;
     font-Size: 38px;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 0;
 }
+
 p.subp {
     font-Size: 18px;
-    margin:0;
+    margin: 0;
 }
-.picture-border{
-    margin: 20px;
-    width: 1400px;
-    height: 360px;
-    border-radius: 15px;
-    background-color:black;
-    width:100%;
+
+.picture-border {
+    display: grid;
+    width: 100%;
+    grid-template:
+        'img1 img1 img1 img2'
+        'img1 img1  img1 img3'
+    ;
+    /* background-color: aquamarine; */
+    gap: 1rem;
 }
-p#textstar {
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.picture-border img {
+    width: 100%;
+}
+
+p#textstar2 {
     background-color: #F24D4D;
     font-Size: 16px;
     font-Weight: bold;
     color: #FFD1D1;
-    margin-left: 25px ;
     width: 53px;
     height: 28px;
     border-radius: 10px;
@@ -66,32 +97,162 @@ p#avai {
     height: 28px;
     background-color: #82CD67;
     padding: 0;
-    margin-left: 25px;
     font-size: 16px;
 }
-p#place{
+
+p#place {
     margin-top: 0;
 }
-p#time{
+
+p#time {
     margin-left: 0;
     font-weight: bold;
+    padding-left: 15px;
+    padding-top: 3px;
 }
-p#conve{
+
+p#conve {
     font-size: 24px;
     font-weight: bold;
 }
-p#time2{
+
+p#time2 {
     font-size: 24px;
     font-weight: bold;
 }
-p#seat{
+
+p#seat {
     font-size: 24px;
     font-weight: bold;
+    margin:0;
 }
-p#border-bottom{
+
+#border-bottom {
     border-bottom: solid 0.5px black;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.review {
+    margin-top: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.sui-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.less-detail span {
+    float: right;
+}
+
+.suitable {
+    padding-left: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px grey;
+    width: 50%;
+    margin-right: 40px;
+    margin-bottom: 2rem;
+}
+
+.suitable h3 {
+    margin: 0; 
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.suitable li {
+    margin: 10px;
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+.top {
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px grey;
+    margin-bottom: 2rem;
+    width: 50%;
+    
+}
+
+.top h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 0; 
+    margin-left: 1rem;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.top h2 p {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.top p {
+    padding-top: 5px;
+}
+
+.top h4 {
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-top: -20px;
+    font-size: 15px;
+
+}
+
+.rating {
+    margin-bottom: 2.5rem; 
+    /* border-radius: 15px;
+    box-shadow: 2px 3px 3px grey; */
+}
+
+.right-review {
+    border-radius: 15px;
+    box-shadow: -2px 3px 3px grey;
+    margin-bottom: 2rem;
+}
+
+.rating h1 {
+    display: flex;
+}
+
+.rating h1 #staricon {
+    color: #F29D38;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.right-review h1 {
+    display: flex;
+    margin: 30px;
+    font-size: 28px;
+}
+
+.right-review h1 #fireicon {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.boxcomment li {
     margin-left: 20px;
     margin-right: 20px;
-    padding-left: 12px;
-    padding-bottom: 5px;
+    list-style-type: none;
+    border-radius: 5px;
+    box-shadow: -1px 2px 1px grey;
+    margin-bottom: 20px;
+}
+
+.rateimg {
+    margin-left: 30px;
 }
